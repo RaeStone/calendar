@@ -26,7 +26,6 @@ export class HolidayService {
     const url: string = 'https://calendarific.com/api/v2/holidays' + '?&api_key=' + API_KEY + '&country=' + country + '&year=2021' + '&month=' + this.month;
     console.log(url);
     const data = this.http.get<any>(url);
-    console.log(data);
     return data;
   }
 

@@ -1,8 +1,5 @@
-//temporary structure - will change w/ api result
-
 import { DeclarationListEmitMode } from "@angular/compiler";
 
-//TODO: MAKE MODEL MATCH API RESPONSE
 export interface Holiday{
     country: {
         id: string,
@@ -23,12 +20,3 @@ export interface Holiday{
     type: string[],
 }
 
-/*
-nesting objects
-
-    name: string;
-    items: {
-        [key: string]: Item
-    };
-
-*/

@@ -1,5 +1,14 @@
 <!--TODO: FORMAT INFORMATION FROM API-->
-<p>Holidays:</p>
-<div *ngFor ="let holiday of holidays">
-    {{holiday.name}}
-</div>
+<mat-card-title id="header">Something to Celebrate!
+    <mat-card-subtitle>Holidays coming up this month</mat-card-subtitle>
+</mat-card-title>
+
+<mat-grid-list cols="4" rowHeight="18em" gutterSize="7px" >
+    <mat-grid-tile id="tile" *ngFor ="let holiday of holidays">
+        <mat-card id="holiday">
+            <mat-card-title id="title">{{holiday.name}}</mat-card-title>
+            <mat-card-subtitle id="date">{{holiday.date.datetime.month}}/{{holiday.date.datetime.day}}</mat-card-subtitle>
+            <mat-card-content id="description">{{holiday.description}}</mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list> 

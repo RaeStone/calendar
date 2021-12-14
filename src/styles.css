@@ -1,4 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+/*@import '@angular/material/prebuilt-themes/purple-green.scss';
+colors: Blue: #ABC4AB Lavender: #DBCBD8
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*/
+#header {
+    background: #455d7a;
+    padding: 25px;
+    color: #9fc79f;;
+    border-radius: 20px;
+    box-shadow: 10px 10px #00000061;
+    font-size: 2em;
+    margin-bottom: 3vh;
+}
+#header .mat-card-subtitle{
+    margin: 2vh 0 2vh 3vw;
+    font-size: .60em;
+       
+}
+#holiday {
+    width: 100%;
+    height: 100%;
+    background: #455d7a;
+}
+html {
+    background-color: #233142;
+}
+#title {
+    color: #f95959;
+    padding: .75em 0;
+    text-shadow: 2px 2px #1111118c;
+}
+#date {
+    color: black;
+    font-weight:bold;
+}
+#description {
+    color: black;
+    font-size: medium;
+}
+#tile {
+    border-radius: 20px
+}
