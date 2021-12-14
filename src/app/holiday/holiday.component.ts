@@ -32,14 +32,12 @@ export class HolidayComponent implements OnInit {
         let len = data.length;
         for (let i = 1; i < len; i++){
           let holidayDay = data[i].date.datetime.day;
-          console.log(holidayDay, this.day);
           //removes duplicate holidays and any holidays that have already passed
           if ((data[i].name != data[i-1].name) && (holidayDay >= this.day)) {
             manipulatedData.push(data[i]);
           }
         }
         this.holidays = manipulatedData;
-        console.log(data);
       }
     })
   }
